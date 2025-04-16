@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+@import url('https://fonts.cdnfonts.com/css/cascadia-code');
+@import url('https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --gris-color: #504F4F;
+    --amarillo-color: #D7B945;
+    --azul-color: #607AFF;
+}
+*{
+    box-sizing: border-box;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100dvb;
+    background-color: var(--gris-color);
+}
+
+h1, h2, h3, h4 {
+    text-wrap: balanced;
+}
+p {
+    text-wrap: pretty;
+}
+
+header{
+    margin: 43px 21px 77px;
+
+}
+
+
+.hero-text > h2 {
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    padding: 0 0;
+    line-height: 1;
+    color: var(--azul-color);
+}
+
+.hero-text > h1 {
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1;
+    position: relative;
+    display: inline-block;
+    color: transparent;
+    background: linear-gradient(90deg, #D7B945 0%, #999999);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: typing 3s steps(11) infinite alternate, 
+               blink 5s infinite step-end;
+    overflow: hidden;
+}
+
+.hero-text > p {
+    font-family: "Righteous", sans-serif;
+    font-weight: 200;
+    font-style: light;
+    font-size: 17px;
+    color: white;
+}
+
+.hero-descripcion > a {
+    font-family: "Roboto Flex", sans-serif;
+    font-weight: 100;
+    font-style: thin;
+    font-size: 18px;
+    color: var(--amarillo-color);
+    text-decoration: none; 
+}
+
+.separador{
+    width: 181px;
+    height: 5px;
+    background-color: var(--amarillo-color);
+    border-radius: 12px;
+    margin-bottom: 11px;
+}
+
+
+.div-redes {
+    margin-top: 20px;
+    display: flex;
+}
+
+.circle-redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.circle-redes > img {
+    width: 25px;
+    height: 25px;
+
+}
+
+.circle-redes:hover {
+    transform: scale(1.1)
+}
+
+
+.proyects {
+    margin-top: 44px;
+    width: 100vw;
+    max-width: 100%;
+    height: 420px;
+    background-color: #1E1E1E;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 2px 45px;
+    margin-bottom: 18px;
+    overflow: hidden;
+}
+
+.h1 {
+    text-align: center; 
+    font-family: "Righteous", sans-serif;
+    font-weight: 200;
+    font-style: light;
+    font-size: 24px;
+    color: white;
+    padding-top: 12px;
+    margin-bottom: 21px;
+}
+.proyects .card-proyectos {
+    display: flex;
+    animation: scroll 6s linear infinite;
+    -webkit-animation: scroll 6s linear infinite;
+    width: calc(260px * 6);
+}
+
+
+.proyects .card-proyectos-2 {
+    display: flex;
+    animation: scroll 6s linear infinite reverse;
+    -webkit-animation: scroll 6s linear infinite reverse;
+    width: calc(260px * 6);
+    margin: 20px 0;
+}
+
+.card { 
+    position: relative;
+    width: 260px;
+    height: 150px;
+    max-width: 260px;
+    overflow: hidden;
+    margin: 0 10px;
+}
+
+
+.card {
+   
+    border-radius: 27px;
+    transform: skewX(-8deg); /* Estado normal, inclinado */
+    transition: transform 0.3s ease; /* Animación suave */
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+.card:hover {
+    transform: skewX(0deg); /* Al pasar el mouse, vuelve a normal */
+}
+.card-title {
+    position: relative; /* Esto es importante */
+    z-index: 2;
+    margin: 10px 20px;
+    z-index: 10;
+
+}
+
+.card-title > h1 {
+    font-family: "Righteous", sans-serif;
+    font-weight: 200;
+    font-style: light;
+    font-size: 28px;
+    color: white;
+    text-align: start;
+}
+
+.card-title > p {
+    font-family: "Roboto Flex", sans-serif;
+    font-weight: 100;
+    font-style: thin;
+    font-size: 10.5px;
+    color: white;
+    text-align: start;
+}
+
+
+.card-content {
+    background: url('images/proyect-ejemplo.png') no-repeat center center;
+    background-size: contain;
+    position: absolute;
+    width: 160px;
+    max-width: 160px;
+    height: 150px;
+    top: 12%;
+    right: 5%;
+    z-index: 1;
+}
+
+
+
+.color-1 {
+    background: linear-gradient(135deg, #94460E, #D5BC5B );
+}
+
+.color-2 {
+    background: linear-gradient(135deg, #1F1F1F, #919191 );
+}
+
+.color-3 {
+    background: linear-gradient(135deg, #182D81, #5082CD );
+}
+
+.color-4 {
+    background: linear-gradient(135deg, #50139A, #B369BA );
+}
+
+.experienxia {
+    position: relative;
+    margin: 0 25px;
+    height: 500px;
+}
+
+.div-experiencia {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.div-experiencia .div-ex {
+    width: 200px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.div-experiencia .div-ex > h1 {
+    font-family: "REM", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-size: 18px;
+    color: white;
+    text-align: start;
+    margin-bottom: 10px;
+}
+.div-experiencia .div-ex > p {
+    font-family: "Roboto Flex", sans-serif;
+    font-weight: 100;
+    font-style: thin;
+    font-size: 17px;
+    color: white;
+} 
+
+.experienxia > .item {
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background-color: var(--amarillo-color);
+    border-radius: 20px;
+    top: 0%;
+    left: 48%;
+}
+
+.circle-empresa {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--amarillo-color);
+    left: 41.5%;
+    cursor: pointer;
+}
+
+.wcs{
+    position: absolute;
+    top: 10%;
+    background: url('images/wcs.png') no-repeat center center;
+    background-size: contain;
+}
+
+.mate{
+    position: absolute;
+    top: 41%;
+    background: url('images/matepng.png') no-repeat center center;
+    background-size: cover;
+}
+
+
+.jaza{
+    position: absolute;
+    top: 73%;
+    background: url('images/jaza.png') no-repeat center center;
+    background-size: cover;
+}
+
+
+
+.circle-empresa:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 700px) {
+    .nav-movil{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
+    }
+    .nv-img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .nav-btn-menu > img{
+        filter:invert(1);
+    }
+    .hero{
+        display: block;
+    }
+    .hero-div {
+        margin: 0 52px;
+        display: grid;
+        place-items: center;
+    }
+    .hero-text {
+        text-align: center;
+        margin-bottom: 55px;
+        white-space: break-word;
+    }
+
+    .hero-text > h2 {
+        font-size: 25px;
+    }
+
+    .hero-text > h1 {
+        font-size: 60px;
+        margin: 0 32px;
+
+    }
+
+    .hero-text > p {
+        font-size: 21px;
+    }
+
+    .hero-descripcion {
+        padding: 0 10px;      
+    }
+    .separador{
+        width: 181px;
+        margin-bottom: 15px;
+    }
+
+    .hero-descripcion > p  {
+        font-family: "Roboto Flex", sans-serif;
+        font-weight: 100;
+        font-style: thin;
+        font-size: 18px;
+        color: #ffff;
+        margin-bottom: 12px;
+    }
+
+    
+
+
+
+
+}
+@media (max-width: 400px) {
+    .hero-text > h1 {
+        font-size: 50px;
+    }
+}
+
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 11ch; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+
+@keyframes scroll {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  
+    100% {
+      -webkit-transform: translateX(calc(-260px * 1.8));
+      transform: translateX(calc(-260px * 1.8));
+    }
+}
