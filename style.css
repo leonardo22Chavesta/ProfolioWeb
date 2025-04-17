@@ -164,9 +164,11 @@ p {
 
 
 
-@media (max-width: 700px) {
+@media (max-width: 300px) {
   
-    
+   .barra {
+    display: none;
+   } 
 
 
 }
