@@ -58,14 +58,12 @@ p {
     flex-wrap: nowrap;
 }
 
-
 .coffe > img {
     width: 40px;
     height: 40px;
     margin-left: 10px;
     border-radius: 50%;
 }
-
 
 .barra {
     display: flex;
@@ -98,14 +96,12 @@ p {
     text-align: center;
 }
 
-
-
 .cicle-historias {
     width: 99%;
     max-width: 100vw;
-    height: 485px;
-    margin:0 4px;
-
+    height: 130px;
+    margin: 20px 4px;
+    border-bottom: 1px solid #ffffff56;
 }
 
 .cicle-historias > ul {
@@ -115,7 +111,7 @@ p {
     justify-content: start;
     align-items: center;
     flex-wrap: nowrap;
-    margin-top: 20px;
+    
 }
 
 .cicle-historias > ul > li {
@@ -162,6 +158,118 @@ p {
     border-radius: 50%;
 }
 
+/* Post */
+
+
+
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    align-items: center;
+    width: 99%;
+    max-width: 100vw;
+    padding: 0 5px;
+}
+
+.post-title > h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    font-style: light;
+    color: #ffffff;
+    text-indent: 0;
+}
+
+.post-title > p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    font-weight: 100;
+    font-style: thin;
+    color: #bebebe;
+    text-indent: 0;
+}
+
+.post-image > img {
+    width: 30px;
+}
+.card-title {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+
+.circle-post {
+    background-image: linear-gradient(45deg, #FCAF45 0%, #F77737 32%, #C13584 83%); ;
+    aspect-ratio: 10/16;
+    width: 42px;
+    height: 42px;
+    padding: 2px;
+    max-width: 66px;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 10px;
+    position: relative;
+}
+.circle-post > div {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+
+}
+.post-img {
+    width: 32px;
+    width: 32px;
+    border-radius: 50%;
+}
+
+.card-contend {
+    width: 99%;
+    max-width: 100vw;
+    margin: 20px 0;
+}
+
+.post-content {
+    width: 99%;
+    max-width: 100vw;
+}
+
+.post-content > img {
+    width: 100%;
+    max-width: 100vw;
+    height: auto;
+}	
+
+.post-interaccion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 99%;
+    max-width: 100vw;
+    padding: 0 16px;
+}
+
+.like > img{
+    width: 26px;
+    height: 24px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.bookmark > img{
+    width: 26px;
+    height: 24px;
+    margin-right: 0px;
+    margin-top: 10px;
+}
 
 
 @media (max-width: 400px) {
