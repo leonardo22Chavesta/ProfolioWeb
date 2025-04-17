@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 @import url('https://fonts.cdnfonts.com/css/cascadia-code');
 @import url('https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
 
 :root {
     --gris-color: #504F4F;
@@ -27,22 +29,92 @@ p {
     text-wrap: pretty;
 }
 
-header {
-    margin:0 4px;
+
+.inst-busca{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 99%;
+    max-width: 100vw;
+    height: 60px;
+    border-bottom: 1px solid #ffffff56;
+    padding: 0 15px;
+}
+.inst-busca > h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: 200;
+    font-style: light;
+    color: #ffffff;
+    text-indent: 0;
 }
 
+.carga {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+
+
+.coffe > img {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+
+
+.barra {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 240px;
+    height: 33px;
+    background-color: #a7a6a6;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+
+.progresso {
+    width: 180px;
+    height: 25px;
+    background-color: #050505;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progresso > p {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 16px;
+    font-weight: 200;
+    font-style: light;
+    color: #ffffff;
+    text-indent: 0;
+    text-align: center;
+}
+
+
+
 .cicle-historias {
-    width: 100%;
+    width: 99%;
+    max-width: 100vw;
     height: 485px;
+    margin:0 4px;
+
 }
 
 .cicle-historias > ul {
     display: flex;
+    flex-wrap: nowrap;
     padding: 8px 0;
     justify-content: start;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 17px;
+    flex-wrap: nowrap;
     margin-top: 20px;
 }
 
@@ -55,13 +127,14 @@ header {
     max-width: 66px;
     border-radius: 50%;
     text-align: center;
+    margin-right: 12px;
     position: relative;
+    
 }
 
 .cicle-historias > ul > li > div {
     background-color: #000;
     display: flex;
-    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     width: 100%;
